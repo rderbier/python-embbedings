@@ -6,7 +6,6 @@ on:
       - master # this can be main
     paths:
       - "sentence-encoding/**"
-
 jobs:
   sentence-encoding:
     runs-on: ubuntu-latest
@@ -36,4 +35,4 @@ jobs:
         region: us-east-1
         image: sentence-encoding:latest
     - name: Update lambda with image
-      run: aws lambda update-function-code --function-name  sentence-encoding --image-uri 968911158010.dkr.ecr.us-east-1.amazonaws.com/sentence-encoding:latest
+      run: aws lambda update-function-code --function-name  sentence-encoding --image-uri 670738750911.dkr.ecr.us-east-1.amazonaws.com/sentence-encoding:latest
