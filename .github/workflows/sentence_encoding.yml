@@ -1,11 +1,8 @@
 name: sentence-encoding
 
 on:
-  pull_request: 
-    branches:
-      - master # this can be main
-    paths:
-      - "sentence-encoding/**"
+  workflow_dispatch
+
 jobs:
   sentence-encoding:
     runs-on: ubuntu-latest
