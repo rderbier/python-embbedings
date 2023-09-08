@@ -9,7 +9,7 @@ ENV TRANSFORMERS_VERBOSITY=error
 RUN yum -y install gcc-c++
 
 COPY requirements.txt requirements.txt
-RUN pip install torch==1.8+cpu -f https://download.pytorch.org/whl/torch_stable.html --no-cache-dir
+RUN pip install torch==2.0.1+cpu -f https://download.pytorch.org/whl/torch_stable.html --no-cache-dir
 RUN pip install -r requirements.txt --no-cache-dir
 
 COPY ./ ./
